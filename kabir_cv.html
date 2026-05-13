@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kabir Singh - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #f59e0b;
+      --text: #334155;
+      --text-light: #64748b;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+      --border: #e2e8f0;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f1f5f9;
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    .cv-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: var(--bg);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      background: var(--primary);
+      color: #fff;
+      padding: 3rem;
+      text-align: center;
+      position: relative;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+    .header h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+    }
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+    .contact-info span {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .contact-info i {
+      color: var(--secondary);
+    }
+    .content {
+      display: flex;
+      padding: 3rem;
+      gap: 3rem;
+    }
+    .main-col {
+      flex: 2;
+    }
+    .side-col {
+      flex: 1;
+    }
+    .section {
+      margin-bottom: 2.5rem;
+    }
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .item {
+      margin-bottom: 1.5rem;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.2rem;
+    }
+    .item-title {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+    .item-date {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+    .item-subtitle {
+      font-size: 0.95rem;
+      color: var(--secondary);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    .item p, .item ul {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+    .item ul {
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .item li {
+      margin-bottom: 0.3rem;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .skills-list span {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .btn-print {
+      display: block;
+      width: 200px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: background 0.3s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-print:hover {
+      background: var(--secondary);
+      color: var(--primary);
+    }
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .cv-container {
+        box-shadow: none;
+        max-width: 100%;
+        border-radius: 0;
+      }
+      .btn-print {
+        display: none;
+      }
+      .content {
+        padding: 2rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        padding: 2rem;
+      }
+      .header {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+    <header class="header">
+      <h1>Kabir Singh</h1>
+      <h2>Front End Developer & UI/UX Designer</h2>
+      <div class="contact-info">
+        <span><i class="fas fa-envelope"></i> kabirsingh69@gmail.com</span>
+        <span><i class="fas fa-phone"></i> +91-8789442373</span>
+        <span><i class="fas fa-map-marker-alt"></i> Siwan, Bihar, India</span>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="main-col">
+        <section class="section">
+          <h3 class="section-title">Profile Profile</h3>
+          <p>Passionate Front End Developer and UI/UX Designer with over 3 years of experience crafting premium, high-performance web experiences. Proven ability to turn complex technical requirements into elegant, user-centric interfaces using modern frameworks like React and Next.js.</p>
+        </section>
+
+        <section class="section">
+          <h3 class="section-title">Featured Projects</h3>
+          
+          <div class="item">
+            <div class="item-header">
+              <span class="item-title">FoodieHub Ordering System</span>
+              <span class="item-date">2024</span>
+            </div>
+            <div class="item-subtitle">MERN Stack E-Commerce Platform</div>
+            <ul>
+              <li>Architected a scalable MVC backend using Node.js and MongoDB.</li>
+              <li>Developed a highly responsive frontend using React.js and Tailwind CSS.</li>
+              <li>Integrated Razorpay for secure and seamless payment processing.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <span class="item-title">Student Admin Portal</span>
+              <span class="item-date">2024</span>
+            </div>
+            <div class="item-subtitle">SaaS UI Dashboard</div>
+            <ul>
+              <li>Designed and implemented a premium dark-mode admin dashboard.</li>
+              <li>Engineered complex data visualization layouts using vanilla CSS grid and flexbox.</li>
+              <li>Ensured 100% mobile responsiveness across all data tables and summary cards.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <span class="item-title">Antigravity Expense Tracker</span>
+              <span class="item-date">2023</span>
+            </div>
+            <div class="item-subtitle">Python Desktop Application</div>
+            <ul>
+              <li>Built a visually striking desktop app using Python and CustomTkinter.</li>
+              <li>Integrated SQLite for secure user authentication and financial data management.</li>
+              <li>Generated dynamic visual reports using Matplotlib.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div class="side-col">
+        <section class="section">
+          <h3 class="section-title">Core Skills</h3>
+          <div class="skills-list">
+            <span>React.js</span>
+            <span>Next.js</span>
+            <span>JavaScript (ES6+)</span>
+            <span>Tailwind CSS</span>
+            <span>HTML5 & CSS3</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>UI/UX Design</span>
+            <span>Figma</span>
+            <span>Git / GitHub</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3 class="section-title">Education</h3>
+          <div class="item">
+            <div class="item-title">Bachelor of Technology</div>
+            <div class="item-subtitle">Computer Science</div>
+            <div class="item-date">2020 - 2024</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3 class="section-title">Languages</h3>
+          <div class="skills-list">
+            <span>English (Fluent)</span>
+            <span>Hindi (Native)</span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn-print" onclick="window.print()">
+    <i class="fas fa-print"></i> Download / Print CV
+  </button>
+
+</body>
+</html>
